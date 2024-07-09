@@ -16,3 +16,66 @@ SYN Scan: Sends SYN packets to specified ports.
 ACK Scan: Sends ACK packets to specified ports.
 NULL Scan: Sends empty packets to specified ports.
 Comprehensive Scan: Performs SYN, ACK, and NULL scans for thorough analysis.
+
+
+# Installation
+Clone the repository:
+
+
+Copy code
+```
+git clone https://github.com/yourusername/your-repository.git
+```
+Navigate to the directory:
+
+
+Copy code
+```
+cd your-repository
+```
+Usage
+Run the script as root:
+
+
+Copy code
+```
+sudo bash networking_scanner.sh
+```
+Follow the on-screen prompts to select scan type, enter target IP/domain, and specify ports.
+
+Scanning Methods
+SYN Scan
+The SYN scan sends SYN packets to specified ports:
+
+
+Copy code
+```
+nc -z -v -n -w 1 -sS $target $port
+```
+ACK Scan
+The ACK scan sends ACK packets to specified ports:
+
+Copy code
+```
+nc -z -v -n -w 1 -sA $target $port
+```
+NULL Scan
+The NULL scan sends empty packets to specified ports:
+
+Copy code
+```
+nc -z -v -n -w 1 -s $target $port
+```
+Comprehensive Scan
+The comprehensive scan combines SYN, ACK, and NULL scans:
+
+
+Copy code
+```
+syn_scan $target $ports
+ack_scan $target $ports
+null_scan $target $ports
+```
+# Contributing
+Contributions are welcome! Please fork the repository and submit pull requests for any improvements or additional features.
+
