@@ -1,13 +1,13 @@
 # Advanced-Netcat-Scanner
 Advanced Networking Scanning Tool using Netcat (nc)    A Bash script for performing advanced networking scans using netcat (nc). This tool supports SYN, ACK, NULL scans, and a comprehensive scan combining these methods.
 # Table of Contents
-Introduction
-Features
-Installation
-Usage
-Scanning Methods
-Contributing
-License
+* Introduction
+* Features
+* Installation
+* Usage
+* Scanning Methods
+* Contributing
+
 # Introduction
 This Bash script provides a command-line interface to perform various types of network scans using netcat (nc). It is useful for security professionals and network administrators to quickly assess the security posture of their networks.
 
